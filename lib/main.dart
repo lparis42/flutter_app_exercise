@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
 
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -134,9 +135,8 @@ class _HomeAppState extends State<HomeApp> {
   }
 
   Widget setPage() {
-    if (page == 1)
-      return VideoApp(videoFile);
-    else if (page == 2)
+    if (page == 1) return VideoApp(videoFile);
+    if (page == 2)
       return Center(
         child: Text('Edit'),
       );
